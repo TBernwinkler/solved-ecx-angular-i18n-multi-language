@@ -1,0 +1,33 @@
+<div class="card m-3">
+  <!-- headline to translate, e.g. instructions.headline as the key -->
+  <h5 class="card-header">Demo Selection</h5>
+  <div class="card-body">
+    Select a Demo option and play around with the translations.
+  </div>
+</div>
+
+<div class="m-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" (click)="selectDemo(availableDemos[0].id, $event)">{{translateOptionUpdateButton}}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="selectDemo(availableDemos[1].id, $event)">{{translateOptionSelectOnly}}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="selectDemo(availableDemos[2].id, $event)">{{translateOptionButtonGroup}}</a>
+    </li>
+  </ul>
+</div>
+
+<ng-container *ngIf="availableDemos[0].active">
+  <app-update-button></app-update-button>
+</ng-container>
+
+<ng-container *ngIf="availableDemos[1].active">
+  <app-language-select-only></app-language-select-only>
+</ng-container>
+
+<ng-container *ngIf="availableDemos[2].active">
+  <app-language-buttons></app-language-buttons>
+</ng-container>

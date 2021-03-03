@@ -1,0 +1,17 @@
+{
+    "instructions": {
+      "headline": "Headline",
+      "instruction1": "instruction text 1",
+      "instruction2": "instruction text 2",
+      "instruction3": "instruction text 3"
+    },
+    "language": {
+      "headline": "Language Selection",
+      "langEN": "English",
+      "langDE": "German",
+      "langHR": "Croatian"
+    },
+    "button": {
+      "label": "Update"
+    }
+  }

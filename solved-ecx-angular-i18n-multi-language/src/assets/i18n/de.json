@@ -1,0 +1,17 @@
+{
+    "instructions": {
+      "headline": "Überschrift",
+      "instruction1": "Anweisungen text 1",
+      "instruction2": "Anweisungen text 2",
+      "instruction3": "Anweisungen text 3"
+    },
+    "language": {
+      "headline": "Sprachauswahl",
+      "langEN": "Englisch",
+      "langDE": "Deutsch",
+      "langHR": "Kroatisch"
+    },
+    "button": {
+      "label": "Aktualisieren"
+    }
+  }

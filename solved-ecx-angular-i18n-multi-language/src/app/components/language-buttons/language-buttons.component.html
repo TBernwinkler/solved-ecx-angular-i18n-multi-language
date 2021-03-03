@@ -1,0 +1,25 @@
+<!-- main app container -->
+<div class="card m-3">
+  <!-- headline to translate, e.g. instructions.headline as the key -->
+  <h5 class="card-header" translate>instructions.headline</h5>
+  <div class="card-body">
+    <ul>
+      <!-- Move the instructions to the i18n JSON files and add the translation keys here -->
+      <li><h6 translate>instructions.instruction1</h6></li>
+      <li><h6 translate>instructions.instruction2</h6></li>
+      <li><h6 translate>instructions.instruction3</h6>
+    </ul>
+  </div>
+</div>
+
+<div class="card m-3">
+  <!-- Another headline to translate; e.g. language.headline -->
+  <h5 class="card-header">{{'Language Selection' | translate}}</h5>
+  <div class="card-body flex-wrapper">
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-primary" (click)="onClick('en')" translate>language.langEN</button>
+      <button type="button" class="btn btn-info" (click)="onClick('de')" translate>language.langDE</button>
+      <button type="button" class="btn btn-success" (click)="onClick('hr')" translate>language.langHR</button>
+    </div>
+  </div>
+</div>

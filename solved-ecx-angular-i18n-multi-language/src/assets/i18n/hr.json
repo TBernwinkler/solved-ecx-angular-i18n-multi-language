@@ -1,0 +1,14 @@
+{
+    "instructions": {
+      "headline": "Naslov",
+      "instruction1": "tekst upute 1",
+      "instruction2": "tekst upute 2",
+      "instruction3": "tekst upute 3"
+    },
+    "language": {
+      "headline": "Izbor Jezika",
+      "langEN": "Engleski",
+      "langDE": "Njemački",
+      "langHR": "Hrvatski"
+    }
+  }

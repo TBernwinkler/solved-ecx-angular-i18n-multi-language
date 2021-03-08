@@ -1,17 +1,47 @@
 {
-    "instructions": {
-      "headline": "Headline",
-      "instruction1": "instruction text 1",
-      "instruction2": "instruction text 2",
-      "instruction3": "instruction text 3"
-    },
-    "language": {
-      "headline": "Language Selection",
-      "langEN": "English",
-      "langDE": "German",
-      "langHR": "Croatian"
-    },
-    "button": {
-      "label": "Update"
-    }
+  "instructions": {
+    "headline": "Headline",
+    "instruction00": "Generate locally a project using ng new or checkout the StackBlitz: ",
+    "subInstruction00": "If you created a new project locally, add bootstrap.min.css (current version 4.3.1) in the head section of index.html. In addition, add the following to your global styles file (e.g. styles.scss)",
+    "instruction01": "Add the necessary dependencies in package.json. You may have to adjust versions according to your current Angular version",
+    "instruction02": "Add an 'assets' folder on root level (same level as index.html)",
+    "instruction03": "Place a folder named 'i18n' inside the assets folder",
+    "instruction04": "Add empty translation files to the i18n directory, e.g. en.json, de.json and hr.json",
+    "instruction05": "Open app.module.ts",
+    "instruction06": "Add the HttpClientModule and the TranslateModule to the NgModule imports",
+    "instruction07": "Configure the TranslateModule forRoot as follows",
+    "instruction08": "Change the default language if you want to",
+    "instruction09": "Add a function export for a HttpLoaderFactory in case AoT is used",
+    "instruction10": "Configure prefix and suffix for the translation file path (I prefer having it there, even if it is the default)",
+    "instruction11": "Choose your next steps",
+    "subInstruction11": "You can either use and edit the 'app.component' files if you just want to have a single component using translations. You can also delete those files and generate separate components for all the demos. The following sections create new components. If you just need a single component, feel free to just use existing files intead.",
+    "instruction12": "Navigate in a terminal to the src/app/components. Create the components directory if it doesn't exist, yet.",
+    "instruction13": "Run 'ng g c root' to generate a component called root.",
+    "instruction14": "Copy content for root.component.html and root.component.ts from ",
+    "instruction15": "Change the tag inside the index.html body tag to the following:",
+    "instruction16": "Create the components that will provide the actual translation examples by running",
+    "instruction17": "Feel free to remove the style URLs from the definitions of the newly created component. After this, you can delete the stylesheets related to the new components.",
+    "instruction18": "Add the TranslateService via constructor injection to all three components",
+    "instruction19": "Introduce a variable like the following to 'language-select-only.component.ts' and 'update-button.component.ts'",
+    "instruction20": "Introduce appropriate functions, that will update the language",
+    "instruction21": "Add the following code to 'update-button.component.html'",
+    "instruction22": "Add the following code to 'language-select-only.component.html'",
+    "instruction23": "Add the following code to 'language-buttons.component.html'",
+    "instruction24": "Define translations in en.json, de.json and hr.json (or for whatever languages you created your files)",
+    "subInstruction24": "Here is an example for en.json. Make sure that the JSON keys are the same everywhere!",
+    "instruction25": "Replace hard coded strings by the translation keys defined in the JSON file, e.g. language.headline",
+    "instruction26": "Add the translations defined in the files by using patterns such as shown below:",
+    "subInstruction26a": "Easiest approach if the HTML tag only contains the translation key",
+    "subInstruction26b": "Easiest approach if the HTML tag also contains other things like additional text, icons, etc.",
+    "instruction27": "Done! It's also possible to provide parameters to translations. Learn more on "
+  },
+  "language": {
+    "headline": "Language Selection",
+    "langEN": "English",
+    "langDE": "German",
+    "langHR": "Croatian"
+  },
+  "button": {
+    "label": "Update"
   }
+}

@@ -1,17 +1,47 @@
 {
-    "instructions": {
-      "headline": "Überschrift",
-      "instruction1": "Anweisungen text 1",
-      "instruction2": "Anweisungen text 2",
-      "instruction3": "Anweisungen text 3"
-    },
-    "language": {
-      "headline": "Sprachauswahl",
-      "langEN": "Englisch",
-      "langDE": "Deutsch",
-      "langHR": "Kroatisch"
-    },
-    "button": {
-      "label": "Aktualisieren"
-    }
+  "instructions": {
+    "headline": "Überschrift",
+    "instruction00": "Generiere lokal ein Projekt mit dem Kommando ng new oder lade folgendes StackBlitz runter: ",
+    "subInstruction00": "Falls Du lokal ein neues Projekt angelegt hast, füge bootstrap.min.css (momentan Version 4.3.1) im head Abschnitt von index.html hinzu. Füge anschließend folgende Anweisungen deiner globalen Style Datei hinzu (z.B. styles.scss)",
+    "instruction01": "Füge die notwendigen Abhängigkeiten im package.json hinzu. Abhängig von Deiner Angular Version kann es sein, dass Versionsnummern geändert werden müssen.",
+    "instruction02": "Erstelle einen Ordner mit dem Namen 'assets' auf oberster Projektebene (gleiche Ebene wie index.html)",
+    "instruction03": "Erstelle einen Ordner mit dem Namen 'i18n' innerhalb des neuen assets Ordners",
+    "instruction04": "Erstelle neue leere Dateien für die i18n Übersetzungen im Ordner i18n, z.B. en.json, de.json and hr.json",
+    "instruction05": "Öffne app.module.ts",
+    "instruction06": "Füge HttpClientModule und TranslateModule dem Abschnitt imports von NgModule hinzu",
+    "instruction07": "Konfiguriere das TranslateModule (forRoot) wie folgt",
+    "instruction08": "Auf Wunsch kann die Standardsprache (defaultLanguage) geändert werden",
+    "instruction09": "Schreibe eine Funktion, die eine HttpLoaderFactory exportiert für den Fall, dass AoT verwendet wird",
+    "instruction10": "Konfiguriere Prefix und Suffix für den Dateipfad zu den Übersetzungen (Ich bevorzuge explizite angaben, auch wenn die Standardwerte verwendet werden)",
+    "instruction11": "Wähle Deine nächsten Schritte",
+    "subInstruction11": "Es ist möglich 'app.component' Dateien zu verwenden und zu editieren, falls nur eine Komponente zum Demonstrieren von Übersetzungen benötigt wird. Alternativ können diese Dateien gelöscht werden. Nachfolgend wird davon ausgegangen, dass die Dateien entweder ignoriert oder gelöscht wurden. Für das Demonstrieren von Übersetzungen werden für die einzelnen Szenarien einzelne Komponenten generiert.",
+    "instruction12": "Navigiere in einer Kommandozeile zum Verzeichnis src/app/components. Erstelle den Ordner components falls dieser nocht nicht existiert.",
+    "instruction13": "Führe das Kommando 'ng g c root' aus, um die root Komponente zu generieren.",
+    "instruction14": "Kopiere Inhalte für root.component.html und root.component.ts von ",
+    "instruction15": "Passe den Inhalt vom body Tag in index.html wie folgt an:",
+    "instruction16": "Erstelle die Komponente, welche die eignetlichen Übersetzungsbeispiele bereitstellen werden indem folgende Kommandos ausgeführt werden:",
+    "instruction17": "Style URLs in den Definitionen der neuen Komponenten können entfernt werden. Im Anschluss ist es möglich, die generierten Stylesheets zu löschen.",
+    "instruction18": "Füge das TranslateService via constructor injection bei allen drei Komponenten hinzu",
+    "instruction19": "Führe folgene Variable bei 'language-select-only.component.ts' und 'update-button.component.ts' ein",
+    "instruction20": "Führe angemessene Funktionen ein, die künftig die Sprache ändern können",
+    "instruction21": "Kopiere diesen Code in die Datei 'update-button.component.html'",
+    "instruction22": "Kopiere diesen Code in die Datei 'language-select-only.component.html'",
+    "instruction23": "Kopiere diesen Code in die Datei 'language-buttons.component.html'",
+    "instruction24": "Definiere Übersetzungen in en.json, de.json und hr.json (bzw. für Deine gewählten Sprachen)",
+    "subInstruction24": "Hier ist ein Beispiel für en.json. Stelle sicher, dass die JSON Schlüssel für die Übersetzungen überall die gleichen sind!",
+    "instruction25": "Ersetze bisherige Texte mit den Übersetzungsschlüsseln aus den JSON Dateien., Headline wird z.B. durch language.headline ersetzt",
+    "instruction26": "Füge schließlich die eigentlichen Übersetzungen hinzu. Die geschieht mit Hilfe der nachfolgenden Optionen:",
+    "subInstruction26a": "Dies ist die einfachste Art, falls der Inhalt des HTML Tags nur aus dem Übersetzungsschlüssel besteht",
+    "subInstruction26b": "Dies ist die einfachse Art, falls neben dem Übersetzungsschlüssel im Tag auch andere Elemente enthalten sind, beispielsweise zusätzlicher Text oder Icons",
+    "instruction27": "Fertig! Es ist auch möglich, Übersetzungen Parameter mitzugeben. Erfahre mehr auf "
+  },
+  "language": {
+    "headline": "Sprachauswahl",
+    "langEN": "Englisch",
+    "langDE": "Deutsch",
+    "langHR": "Kroatisch"
+  },
+  "button": {
+    "label": "Aktualisieren"
   }
+}

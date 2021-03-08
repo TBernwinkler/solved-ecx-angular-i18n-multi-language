@@ -3,12 +3,165 @@
   <!-- headline to translate, e.g. instructions.headline as the key -->
   <h5 class="card-header" translate>instructions.headline</h5>
   <div class="card-body">
-    <ul>
+    <ol>
       <!-- Move the instructions to the i18n JSON files and add the translation keys here -->
-      <li><h6 translate>instructions.instruction1</h6></li>
-      <li><h6 translate>instructions.instruction2</h6></li>
-      <li><h6 translate>instructions.instruction3</h6>
-    </ul>
+      <li>
+        <h6>{{'instructions.instruction00' | translate}}<a [href]="stackBlitzUrl" target="_blank">{{stackBlitzUrl}}</a></h6>
+        <p translate>instructions.subInstruction00</p>
+        <pre><code>{{".flex-wrapper {\n" +
+        "  display: flex;\n" +
+        "}\n" +
+        "\n" +
+        ".language-select {\n" +
+        "  width: 15em;\n" +
+        "  margin-right: .5em;\n" +
+        "}"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction01</h6>
+        <pre><code>{{"\"@ngx-translate/core\": \"^13.0.0\",\n" +
+        "\"@ngx-translate/http-loader\": \"^6.0.0\""}}</code></pre>
+      </li>
+      <li><h6 translate>instructions.instruction02</h6></li>
+      <li><h6 translate>instructions.instruction03</h6></li>
+      <li><h6 translate>instructions.instruction04</h6></li>
+      <li><h6 translate>instructions.instruction05</h6></li>
+      <li><h6 translate>instructions.instruction06</h6></li>
+      <li>
+        <h6 translate>instructions.instruction07</h6>
+        <pre><code>{{"TranslateModule.forRoot({\n" +
+        "  defaultLanguage: 'en',\n" +
+        "  loader: {\n" +
+        "    provide: TranslateLoader,\n" +
+        "    useFactory: HttpLoaderFactory,\n" +
+        "    deps: [HttpClient]\n" +
+        "  }\n" +
+        "})"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction08</h6>
+      </li>
+      <li><h6 translate>instructions.instruction09</h6></li>
+      <li>
+        <h6 translate>instructions.instruction10</h6>
+        <pre><code>{{"export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {\n" +
+        "  return new TranslateHttpLoader(http, './assets/i18n/', '.json');\n" +
+        "}"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction11</h6>
+        <p translate>instructions.subInstruction11</p>
+      </li>
+      <li><h6 translate>instructions.instruction12</h6></li>
+      <li><h6 translate>instructions.instruction13</h6></li>
+      <li>
+        <h6>{{'instructions.instruction14' | translate}}
+        <a [href]=rootComponentUrl
+           target="_blank">GitHub</a></h6>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction15</h6>
+        <pre><code>{{"&lt;body&gt;\n"+
+          "  &lt;app-root&gt;&lt;/app-root&gt;\n"+
+          "&lt;/body&gt;"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction16</h6>
+        <pre><code>{{"ng g c update-button\n"+
+          "ng g c language-select-only\n"+
+          "ng g c language-buttons"}}</code></pre>
+      </li>
+      <li><h6 translate>instructions.instruction17</h6></li>
+      <li><h6 translate>instructions.instruction18</h6></li>
+      <li>
+        <h6 translate>instructions.instruction19</h6>
+        <pre><code>selectedLanguage = 'en';</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction20</h6>
+        <pre><code>{{"// update-button\n"+
+        "onUpdate(): void {\n" +
+        "  ....use(this....);\n" +
+        "}"}}</code></pre>
+        <pre><code>{{"// language-select-only\n" +
+        "onSelectionChange(): void {\n" +
+        "  ....use(this....);\n" +
+        "}"}}</code></pre>
+        <pre><code>{{"// language-buttons\n"+
+        "onClick(languageCode: string): void {\n" +
+        "  ....use(...);\n" +
+        "}"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction21</h6>
+        <pre><code>{{"&lt;div class=\"card m-3\"&gt;\n"+
+        "  &lt;!-- Another headline to translate; e.g. language.headline --&gt;\n"+
+        "  &lt;h5 class=\"card-header\"&gt;Language Selection&lt;/h5&gt;\n"+
+          "  &lt;div class=\"card-body flex-wrapper\"&gt;\n"+
+          "    &lt;select [(ngModel)]='selectedLanguage' class=\"form-control language-select\" &gt;\n"+
+          "      &lt;option value=\"en\"&gt;English&lt;/option&gt;\n"+
+          "      &lt;option value=\"de\"&gt;Deutsch&lt;/option&gt;\n"+
+          "      &lt;option value=\"hr\"&gt;Hrvatski&lt;/option&gt;\n"+
+          "    &lt;/select&gt;\n"+
+          "    &lt;div class=\"text-center\"&gt;\n"+
+          "      &lt;button (click)=\"onUpdate()\" class=\"btn btn-primary mr-1\" translate&gt;button.label&lt;/button&gt;\n"+
+          "    &lt;/div&gt;\n"+
+          "  &lt;/div&gt;\n"+
+          "&lt;/div&gt;"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction22</h6>
+        <pre><code>{{"&lt;div class=\"card m-3\"&gt;\n"+
+        "  &lt;!-- Another headline to translate; e.g. language.headline --&gt;\n"+
+        "  &lt;h5 class=\"card-header\"&gt;Language Selection&lt;/h5&gt;\n"+
+          "  &lt;div class=\"card-body flex-wrapper\"&gt;\n"+
+          "    &lt;select [(ngModel)]='selectedLanguage' class=\"form-control language-select\" &gt;\n"+
+          "      &lt;option value=\"en\"&gt;English&lt;/option&gt;\n"+
+          "      &lt;option value=\"de\"&gt;Deutsch&lt;/option&gt;\n"+
+          "      &lt;option value=\"hr\"&gt;Hrvatski&lt;/option&gt;\n"+
+          "    &lt;/select&gt;\n"+
+          "  &lt;/div&gt;\n"+
+          "&lt;/div&gt;"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction23</h6>
+        <pre><code>{{"&lt;div class=\"card m-3\"&gt;\n"+
+        "  &lt;!-- Another headline to translate; e.g. language.headline --&gt;\n"+
+        "  &lt;h5 class=\"card-header\"&gt;Language Selection&lt;/h5&gt;\n"+
+          "  &lt;div class=\"card-body flex-wrapper\"&gt;\n"+
+          "    &lt;div class=\"btn-group\" role=\"group\" aria-label=\"Basic mixed styles example\"&gt;\n"+
+          "      &lt;button type=\"button\" class=\"btn btn-primary\" (click)=\"onClick('en')\"&gt;English&lt;/button&gt;\n"+
+          "      &lt;button type=\"button\" class=\"btn btn-info\" (click)=\"onClick('de')\"&gt;Deutsch&lt;/button&gt;\n"+
+          "      &lt;button type=\"button\" class=\"btn btn-success\" (click)=\"onClick('hr')\"&gt;Hrvatski&lt;/button&gt;\n"+
+          "  &lt;/div&gt;\n"+
+          "&lt;/div&gt;\n"+
+          "&lt;/div&gt;"}}</code></pre>
+      </li>
+      <li>
+        <h6 translate>instructions.instruction24</h6>
+        <p translate>instructions.subInstruction24</p>
+        <pre><code>{{"{\n"+
+        "  \"language\": {\n" +
+        "    \"headline\": \"Language Selection\",\n" +
+        "    \"langEN\": \"English\",\n" +
+        "    \"langDE\": \"German\",\n" +
+        "    \"langHR\": \"Croatian\"\n" +
+        "  },\n" +
+        "    \"button\": {\n" +
+        "    \"label\": \"Update\"\n" +
+        "  }\n" +
+        "}"}}</code></pre>
+      </li>
+      <li><h6 translate>instructions.instruction25</h6></li>
+      <li>
+        <h6 translate>instructions.instruction26</h6>
+        <p translate>instructions.subInstruction26a</p>
+        <pre><code>{{"&lt;tag-name translate&gt;instructions.headline&lt;/tag-name&gt;\n"}}</code></pre>
+        <p translate>instructions.subInstruction26b</p>
+        <pre><code ngNonBindable>{{'instructions.headline' | translate}}</code></pre>
+      </li>
+      <li><h6 translate>instructions.instruction27 <a [href]=ngxTranslateUrl target="_blank">GitHub</a> </h6></li>
+    </ol>
   </div>
 </div>
 

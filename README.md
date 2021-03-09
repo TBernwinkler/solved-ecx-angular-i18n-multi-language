@@ -6,7 +6,7 @@ Angular 11 ngx-translate i18n multi language example
 - https://stackblitz.com/edit/solved-ecx-angular-i18n-multi-language
 
 ## How to add @ngx-translate i18n translations from scratch
-### (1) Generate locally a project using ng new or checkout the StackBlitz: https://stackblitz.com/edit/ecx-angular-i18n-multi-language
+### (1) Generate locally a project using `ng new` or checkout the StackBlitz (linked above)
 If you created a new project locally, add bootstrap.min.css (current version 4.3.1) in the head section of index.html. In addition, add the following to your global styles file (e.g. styles.scss)
 
 ```css
@@ -83,15 +83,15 @@ selectedLanguage = 'en';
 ```typescript
 // update-button
 onUpdate(): void {
-  ....use(this....);
+  //....use(this....);
 }
 // language-select-only
 onSelectionChange(): void {
-  ....use(this....);
+  //....use(this....);
 }
 // language-buttons
 onClick(languageCode: string): void {
-  ....use(...);
+  //....use(...);
 }
 ```
 
@@ -173,4 +173,3 @@ Here is an example for en.json. Make sure that the JSON keys are the same everyw
 ### (28) Done! It's also possible to provide parameters to translations. Learn more on [GitHub](https://github.com/ngx-translate/core#4-define-the-translations)
 
 ## Play around and find your favorite way to switch in between languages :clap:
-Made with :heart:
